@@ -9,7 +9,7 @@ const app = express();
 
 // Configuration
 const config = {
-    contractAddress: "0xf16992e29BD5FA6c761C9E7821afd17336cF444C",
+    contractAddress: "0xFec57635A4A301deFe1f3DC65aFDf2DE9815a999",
     web3ProviderUrl: "https://rpc2.sepolia.org",
     port: 3000,
 };
@@ -124,6 +124,7 @@ async function buildJson(npcTraits, tokenId) {
         };
         const data = {
             'name': `NPC Custom #${tokenId}`,
+            'description' : 'A collection of over 8 billion unique, special and customized NPCs on the Ethereum blockchain.',
             attributes,
             'image': `https://customs.onrender.com/Image?Id=${tokenId}`
         };
