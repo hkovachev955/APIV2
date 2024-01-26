@@ -9,7 +9,7 @@ const app = express();
 
 // Configuration
 const config = {
-    contractAddress: "0x1c5d4dEb1b1517705a604BA2b5e675516c16Bf72",
+    contractAddress: "0xf16992e29BD5FA6c761C9E7821afd17336cF444C",
     web3ProviderUrl: "https://rpc2.sepolia.org",
     port: 3000,
 };
@@ -125,7 +125,7 @@ async function buildJson(npcTraits, tokenId) {
         const data = {
             'name': `NPC Custom #${tokenId}`,
             attributes,
-            'image': `http://localhost:${config.port}/Image?Id=${tokenId}`
+            'image': `https://customs.onrender.com/Image?Id=${tokenId}`
         };
 
         return data;
